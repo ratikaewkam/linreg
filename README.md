@@ -1,6 +1,12 @@
 # linreg
 Building my own C++ library for the Linear Regression
 
+![GitHub Release](https://img.shields.io/github/v/release/ratikaewkam/linreg)
+![GitHub contributors](https://img.shields.io/github/contributors/ratikaewkam/linreg)
+![GitHub repo size](https://img.shields.io/github/repo-size/ratikaewkam/linreg)
+![GitHub forks](https://img.shields.io/github/forks/ratikaewkam/linreg)
+
+
 ## Latest Feature
 - Find a linear regression equation
 
