@@ -39,3 +39,6 @@ main.cpp
 
 # vscode
 /.vscode
+
+# release
+/release
