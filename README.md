@@ -25,7 +25,7 @@ int main()
     std::vector<double> x = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     std::vector<double> y = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
-    double alpha = 0.01;
+    double alpha = 0.01; // Learning rate
     unsigned int epochs = 5000;
     unsigned char track = 1; // Type 1 : track value
 
