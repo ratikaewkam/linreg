@@ -9,6 +9,8 @@ Building my own C++ library for the Linear Regression
 
 ## Latest Feature
 - Find a linear regression equation
+- Fix invalid track value
+- Update error handling (data size, invalid value)
 
 ## Example
 ```c++
@@ -26,11 +28,11 @@ int main()
     std::vector<double> y = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
     double alpha = 0.01; // Learning rate
-    unsigned int epochs = 5000;
-    unsigned char track = 1; // Type 1 : track value
+    int epochs = 3333;
+    int track = 1; // Type 1 : track value
 
     param = model.fit(x, y, param, alpha, epochs, track);
-    std::cout << "----------------------------" << std::endl;
+
     std::cout << "y = " << param.w << "x + " << param.b << std::endl;
     std::cout << "loss: " << param.mse << std::endl;
 
