@@ -29,6 +29,11 @@ namespace linreg
         public:
             parameter gradient_descent(std::vector<double> x, std::vector<double> y, parameter param, double alpha)
             {
+                if (x.size() != y.size())
+                {
+                    throw "Error -> Invalid data size";
+                }
+
                 double dw = 0;
                 double db = 0;
                 unsigned int n = x.size();
@@ -54,6 +59,11 @@ namespace linreg
         public:
             parameter mse(std::vector<double> x, std::vector<double> y, parameter param)
             {
+                if (x.size() != y.size())
+                {
+                    throw "Error -> Invalid data size";
+                }
+
                 double err = 0;
                 double e = 0;
                 double pred = 0;
@@ -74,7 +84,7 @@ namespace linreg
         };
 
     public:
-        parameter fit(std::vector<double> x, std::vector<double> y, parameter param, double alpha, double epochs, unsigned char track);
+        parameter fit(std::vector<double> x, std::vector<double> y, parameter param, double alpha, int epochs, int track);
     };
 }
 
